@@ -6,7 +6,7 @@ ExpressJS server for [repomint-web](https://github.com/repomint/repomint-web)
 
 We use ExpressJS server running on port 4000.
 
-Set enviroment variables
+Set environment variables
 ```bash
 export GITHUB_OAUTH_CLIENT_ID=...
 export GITHUB_OAUTH_CLIENT_SECRET=...
