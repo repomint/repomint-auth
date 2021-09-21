@@ -7,7 +7,7 @@ const repositoryController = {
     const octokit = new Octokit({ auth: ghToken });
 
     try {
-      const userRepos = await octokit.request(`GET /users/${username}/repos`, {
+      const userRepos = await octokit.request(`GET /users/${username}/repos?type=all`, {
         username
       })
       res.json({
