@@ -14,7 +14,6 @@ app.get('/auth', async function (req, res) {
   if (!isEmpty(code)) {
     try {
       const authRes = await githubOAuth({ code });
-      console.log('authRes', authRes)
       res.json(authRes);
     } catch (err) {
       console.error(`Something went wrong on auth: ${err}`);
